@@ -16,12 +16,26 @@
       line-height: 175px
     }
   </style>
+  <script>
+      $(document).ready(function(){
+          $('.box').on('click', function(){
+              this.innerText = (parseInt(this.innerText)) - 1;
+              if (this.id = "box1"){
+                  document.getElementById("box2").innerText = (parseInt(document.getElementById("box2").innerText)) + 1;
+              } else if (this.id = "box2") {
+
+
+              }
+          })
+      });
+
+  </script>
 </head>
 <body>
-  <div class="counter1">
+  <div class="box" id="box1">
     10
   </div>
-  <div class="counter2">
+  <div class="box" id="box2">
     10
   </div>
 </body>
